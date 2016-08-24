@@ -232,10 +232,6 @@ const SearchField = React.createClass ({
         return { searchString: '' };
     },
     handleChange(e){
-        // Если вы закомментируете данную строку, поле ввода не изменит свое значение.
-        // Это потому, что в React'е, поле не может измениться независимо от свойства
-        // которое было ему присвоено. В нашем случае, это this.state.searchString.
-
         this.setState({searchString:e.target.value});
         store.dispatch({
         	type: 'SET_FILTER',
