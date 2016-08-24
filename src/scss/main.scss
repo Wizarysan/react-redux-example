@@ -1,0 +1,101 @@
+$main-color: #95D7ED;
+$focus-color: #66B6D1;
+$dark-color: #016282;
+
+.main-title {
+	text-align: center;
+}
+
+#app {
+	width: 90%;
+	margin-left: 5%;	
+}
+
+.addrecord__title {
+	border-bottom: 0;
+}
+
+.addrecord__title, .addrecord__text, 
+.record-editor__title, .record-editor__text {
+	display: block;
+	resize: none;
+	width: 100%;
+	padding: 2px 5px;
+	border: 1px solid $main-color;
+	margin-top: 5px;
+	&:focus {
+		border-color: $focus-color;
+		outline: 0;
+	}
+}
+
+.addrecord__submit-button, .record-editor__submit-button {
+	width: 100%;
+	background-color: $main-color;
+	color: $dark-color;
+	border: 1px solid $main-color;
+	margin-top: 5px;
+}
+
+.search-field {
+	margin-top: 20px;
+	.search-field__input {
+		width: 100%;
+		background-image: url('../img/searchicon.png');
+	    background-position: 5px 4px;
+	    background-repeat: no-repeat;
+	    padding: 2px 30px;
+	    border: 1px solid #95D7ED;
+	    &:focus {
+	    	border-color: $focus-color;
+	    	outline: 0;
+	    }
+	}
+}
+
+.allrecords {
+	margin-top: 20px;
+}
+
+.record, .record-editor {
+	margin-top: 10px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid $main-color;
+}
+
+.record__title {
+	
+}
+
+.record__text {
+	margin-bottom: 10px;
+	white-space: pre-line;
+}
+
+.record__delete, .record__edit {
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	display: inline-block;
+	background-position: 2px 2px;
+    background-repeat: no-repeat;
+    background-color: white;
+    border: 0;
+}
+
+.record__delete {
+	background-image: url('../img/trashicon.png');
+
+}
+
+.record__edit {
+	background-image: url('../img/editicon.png');
+}
+
+.record__date {
+	color: $dark-color;
+}
+
+.record-editor__title, .record-editor__text {
+	border-style: dotted;
+}
