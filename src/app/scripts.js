@@ -5,10 +5,6 @@ function createDate() {
 	return date.toLocaleString();
 }
 
-function checkFields() {
-
-}
-
 //Reducers
 
 const RecordReducer = (state, action) => { //Редусер отвечает за каждую отдельную запись.
